@@ -1,0 +1,68 @@
+<!-- COPYRIGHT (C) 2024 - SWATHYMOL SAJEEV | GNU General Public License v3.0
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, 
+either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful,but WITHOUT ANY WARRANTY; 
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Generator Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>RGB Color Generator</h1>
+        <div class="color-display"></div>
+
+        <div class="controls">
+
+            <div class="control">
+                <label for="red">Red:</label>
+                <div class="slider-container">
+                    <input type="range" id="red" min="0" max="255" value="0">
+                    <span id="redValue">0</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <label for="green">Green:</label>
+                <div class="slider-container">
+                    <input type="range" id="green" min="0" max="255" value="0">
+                    <span id="greenValue">0</span>
+                </div>
+            </div>
+
+            <div class="control">
+                <label for="blue">Blue:</label>
+                <div class="slider-container">
+                    <input type="range" id="blue" min="0" max="255" value="0">
+                    <span id="blueValue">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="inputType" class="input-type-value">rgb(255,128,155)</div>
+        <button id="copyButton">Copy Color</button>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="copyright">
+                <p>&copy; 2024 SwathyBinoj - RGB Color Generator</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
